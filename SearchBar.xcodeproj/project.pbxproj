@@ -112,8 +112,6 @@
 		CDEF6DA818BAAC0200E5E216 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				CDEF6DB118BAAC0200E5E216 /* AppDelegate.h */,
-				CDEF6DB218BAAC0200E5E216 /* AppDelegate.m */,
 				CDEF6DB418BAAC0200E5E216 /* Main.storyboard */,
 				CDEF6DB718BAAC0200E5E216 /* ViewController.h */,
 				CDEF6DB818BAAC0200E5E216 /* ViewController.m */,
@@ -126,6 +124,8 @@
 		CDEF6DA918BAAC0200E5E216 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDEF6DB118BAAC0200E5E216 /* AppDelegate.h */,
+				CDEF6DB218BAAC0200E5E216 /* AppDelegate.m */,
 				CDEF6DAA18BAAC0200E5E216 /* SearchBar-Info.plist */,
 				CDEF6DAB18BAAC0200E5E216 /* InfoPlist.strings */,
 				CDEF6DAE18BAAC0200E5E216 /* main.m */,

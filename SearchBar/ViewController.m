@@ -2,7 +2,7 @@
 //  ViewController.m
 //  SearchBar
 //
-//  Created by bbpan on 2/23/14.
+//  Created by Sam Fung on 2/23/14.
 //  Copyright (c) 2014 sfng.co. All rights reserved.
 //
 
@@ -14,16 +14,42 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark UITableViewDataSource delegates
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+# pragma mark UISearchDisplayDelegate delegates
+
+- (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller {
+    NSLog(@"Will begin search");
+}
+
+- (void)searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller {
+    NSLog(@"Did begin search");
+}
+
+- (void)searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller {
+    NSLog(@"Will end search");
+}
+
+- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
+    NSLog(@"Did end search");
 }
 
 @end
